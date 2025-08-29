@@ -1,0 +1,85 @@
+
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('pbc.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.login-container{
+    max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family:  sans-serif;
+}
+.login-container h2{
+margin-bottom: 20px;
+  color: #333;
+}
+.login-container input {
+    width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;}
+  .login-container input:focus{
+      border-color: #4a90e2;
+  outline: none;
+  }
+  .login-container button{
+    width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s ease;
+  }
+  .login-container button:hover {
+    background-color: #357ab7;
+  }
+
+  .login-container button[type="login"],
+.login-container button[type="home"] {
+  background-color: #eee;
+  color: #333;
+}
+
+.login-container .error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}   
+.login-container .success {
+  color: green;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}   
+.otp-verification{
+    width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s ease;
+}

@@ -1,0 +1,53 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules (if using Node.js/React)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Python virtual environment (if using Python/Flask/AI model)
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore build artifacts
+dist/
+build/
+*.log
+
+# Ignore environment & credentials
+.env
+*.pem
+*.key
+
+# Ignore large files (databases, model weights, etc.)
+*.sqlite
+*.db
+*.sql
+*.tar
+*.zip
+*.gz
+*.7z
+*.mp4
+*.avi
+*.mkv
+*.iso
+*.exe
+*.dll
+*.so
+*.jar
+
+# AI/ML specific large files
+*.h5
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.weights
+
+# Custom rule to ignore any file >100MB
+# (Git doesn’t support size-based ignore, so best practice is: 
+# NEVER add big files, or use Git LFS if you must.)

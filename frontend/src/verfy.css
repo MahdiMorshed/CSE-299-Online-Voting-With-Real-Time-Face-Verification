@@ -1,0 +1,207 @@
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.inputText {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputText:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+.videoWrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: #000;
+}
+
+.videoWrapper video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.overlayBox {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 4px solid rgba(0,123,255,0.7);
+  border-radius: 12px;
+  pointer-events: none;
+  box-sizing: border-box;
+  animation: pulseOverlay 2s infinite;
+}
+
+@keyframes pulseOverlay {
+  0%, 100% {
+    border-color: rgba(0,123,255,0.7);
+    box-shadow: 0 0 12px rgba(0,123,255,0.7);
+  }
+  50% {
+    border-color: rgba(0,123,255,0.4);
+    box-shadow: 0 0 4px rgba(0,123,255,0.4);
+  }
+}
+
+.button {
+  margin-top: 18px;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.button.retry {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.button.retry:hover:not(:disabled) {
+  background-color: #e0a800;
+}
+
+.button.yes {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.button.yes:hover {
+  background-color: #218838;
+}
+
+.button.no {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button.no:hover {
+  background-color: #c82333;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.loadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #007bff;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorMessage {
+  color: #dc3545;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.resultBox {
+  margin-top: 20px;
+  background-color: #e9ecef;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+}
+
+.resultScore {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.similar {
+  color: #28a745;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.different {
+  color: #dc3545;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.confirmationBox {
+  margin-top: 30px;
+  background: #d1e7dd;
+  border: 2px solid #0f5132;
+  padding: 20px;
+  border-radius: 10px;
+  color: #0f5132;
+}
+
+.countdown {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.finalWarningBox {
+  margin-top: 30px;
+  background: #fff3cd;
+  border: 2px solid #ffecb5;
+  padding: 20px;
+  border-radius: 10px;
+  color: #664d03;
+  font-weight: 600;
+  font-size: 16px;
+  animation: fadeIn 0.5s ease forwards;
+  user-select: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
