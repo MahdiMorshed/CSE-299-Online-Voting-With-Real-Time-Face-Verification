@@ -1,2 +1,2 @@
-# cse229_project_test01
+# CSE-299-Online-Voting-With-Real-Time-Face-Verification
 
